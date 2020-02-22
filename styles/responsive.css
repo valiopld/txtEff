@@ -1,0 +1,40 @@
+@media screen and (max-width: 600px) {
+  .main-logo {
+    display: none;
+  }
+
+  .topNav {
+    display: none;
+  }
+  .topNav-mobile {
+    display: flex;
+  }
+
+  .mobile-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    font-size: 3rem;
+    height: 1rem;
+    color: var(--Blue);
+    margin-right: 2rem;
+  }
+  .postIndex {
+    flex-direction: column;
+  }
+  .postIndex-inside {
+    width: 95%;
+    margin-bottom: 2rem;
+  }
+  .fContact {
+    flex-direction: column;
+  }
+  .SideBar {
+    display: none;
+  }
+  .mainDoc {
+    margin: 0;
+    border: none;
+  }
+}

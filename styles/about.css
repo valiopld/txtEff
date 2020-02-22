@@ -1,0 +1,47 @@
+.about {
+  width: 100%;
+  background-color: var(--White);
+  padding: 3rem;
+}
+
+.aboutContainer {
+  margin: auto;
+  max-width: 60rem;
+  height: 100%;
+  background-color: var(--Trans);
+  box-shadow: 0 0 1rem var(--Black);
+  border-radius: 0.2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.aboutContainer p {
+  display: block;
+}
+.info {
+  margin: auto;
+}
+.profile-pic {
+  background-image: url("./images/profile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 12rem;
+  height: 14rem;
+  border: 1px solid black;
+  float: left;
+  margin-right: 2rem;
+}
+
+.more {
+  padding: 2rem;
+  text-align: center;
+}
+.more a {
+  text-decoration: none;
+  color: rgb(6, 9, 155);
+  font-weight: bold;
+}
+.more a:hover {
+  color: rgb(224, 103, 33);
+  transition: color 0.5s;
+}

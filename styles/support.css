@@ -1,0 +1,45 @@
+.support {
+  width: 100%;
+  background-color: var(--White);
+  padding: 3rem;
+}
+
+.supportContainer {
+  margin: auto;
+  max-width: 60rem;
+  height: 100%;
+  background-color: var(--Trans);
+  box-shadow: 0 0 1rem var(--Black);
+  border-radius: 0.2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.supportContainer a {
+  text-decoration: none;
+  color: rgb(6, 9, 155);
+  font-weight: bold;
+}
+.supportContainer a:hover {
+  color: rgb(224, 103, 33);
+  transition: color 0.5s;
+}
+.supportUs,
+.supportUs h2,
+.tnxTo h2,
+.tnxTo {
+  margin-bottom: 2rem;
+}
+.tnxTo,
+.supportUs h3 {
+  margin-top: 1rem;
+}
+#donate {
+  display: inline-block;
+  font-size: 1.3rem;
+}
+#donate:hover {
+  transition: transform 0.5s, color 0.5s;
+  transform: scale(1.5);
+}

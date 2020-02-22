@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>txtEff Library Home page</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/Header.css" />
+    <link rel="stylesheet" href="./styles/doc.css" />
+    <link rel="stylesheet" href="./styles/Footer.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <script src="./components/Header.js"></script>
+    <script src="./components/Footer.js"></script>
+
+  </head>
+  <body>
+    <div class="Header" id="header"></div>
+    <div class="doc" id="doc">
+      <div class="doc-container">
+        <div class="SideBar">
+          <ul class="sideUL">
+            <li>
+              <a href="#getStarted">Get Started</a>
+            </li>
+            <li>
+              <a href="#textEffect">Effects </a>
+            </li>
+            <ul class="sideUl-lvl2">
+              <li>
+                <a href="#typingEf">- Typing</a>
+              </li>
+              <li>
+                <a href="#fadeEf">- Fade</a>
+              </li>
+              <li>
+                <a href="#popUpEf">- PopUp</a>
+              </li>
+              <li>
+                <a href="#colorEf">- Color</a>
+              </li>
+            </ul>
+            <li>
+              <a href="#version"> txtEff v.1.2</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mainDoc">
+      
+          <h1 id="getStarted">Get Started</h1>
+          The only think you need to do to use txtEff Library is to import the
+          script in your page in one of the following two ways:
+          <br />
+          <br />
+          First way - import the script directly from our server.
+          <br />
+          You need to add the fallowing code in your HTML file (recommended at te
+          end of the body tag)
+          <div class="scriptCont">
+            <span class="pinkColor">&lt;script</span>
+            <span class="aquaColor"> src</span>='https://valiopld.github.io/txtEff/txtEff.min.js' 
+            <span class="pinkColor">&gt;&lt;/script&gt;</span>
+          </div>
+          Second way - <a href="./txtEff.min.js" download>Download</a> the script and then import it in
+          your HTML file.
+          <div class="scriptCont">
+           
+       <span class="pinkColor">&lt;script</span> 
+        <span class="aquaColor">src</span>='*Your Directory*/txtEff.min.js'
+          <span class="pinkColor">&gt;&lt;/script&gt;</span>    
+          <span class="comment"> // *Your Directy e direktoriqta kudeto ste svalili scripta</span>
+          </div>
+          This way the library will stay on your server and will be independent
+          from connecting fails
+          <br />
+          <b>
+          !! You can NOT use the txtEff library v1.0 with Frameworks that use virtual
+          DOM like react,VueJS, Angular etc !!</b>
+          <h1 id="textEffect">Effects</h1>
+  
+          To use some of the effects you need an empty div Tag with class =
+          "txtEff". Every txtEff div need 2 required attributes: "effect" - which
+          effect you will use and "text" - the text that will be affected. Each
+          effect can be tune with another attributes according to your needs.
+          <div class="scriptCont">
+           <p class="pinkColor"> &lt; div class="txtEff"</p>
+            <p class="aquaColor">effect</p>="Your Effect"
+            <span class="comment"> //  *Your Effect - replace with the name of the choosen effect
+            </span><br/>
+            <p class="aquaColor">text</p>="Your Text"
+            <span class="comment"> //         *Your Text - replace with the Text that you want to be affected
+  
+            </span>
+            <br />
+            <p class="pinkColor"> &gt; &lt;/div&gt;<p>
+          </div>
+          <br />
+  
+          <h2 id="typingEf">Typing</h2>
+          div tag-a na typing effect-a osven zaduljitelnite atributi class,effect
+          i text ... moje da ima i "cursorspeed" - kolko burzo da blinkva "|" v
+          kraq na texta naprimer cursorspeed="300" koeto oznachava na vseki 300
+          ms<br />
+          ako ne iskash da ima cursor ima attribute cursor="no" </br>
+          "typingspeed" - kolko burzo da se izpisvat bukvite naprimer
+          typingspeed="200" oznachava che na vseki 200ms shte sse izpizva po edna
+          bukva.
+          <br />
+          "repeat" e dali kogato se izpishe celiq text da se trie i pak da se
+          povtarq sushtoto repeat="yes" ... repeat="no" - kogato se
+          izpishe texta si ostava taka. default stoinostite na cursorspeed i
+          typingspeed sa 300 a na repeat - yes t.e. ako ne gi vuvedesh kato
+          atribut na div taga shte gi s4ita za tolkoz
+          <div class="scriptCont">
+            <p class="pinkColor">&lt;div class="txtEff" </p>
+            <p class="aquaColor"> effect</p>="typing"<br />
+            <p class="aquaColor"> text</p>="This is Typing Effect" <br /><br />
+            <p class="aquaColor"> repeat</p>="yes"<br />
+              <p class="aquaColor"> typingspeed</p>="300"<br />
+                <p class="aquaColor"> cursrorspeed</p>="300"<br />
+                <p class="pinkColor">&gt;&lt;div/&gt;</p>
+          </div>
+          <div
+            class="txtEff effectCont"
+            effect="typing"
+            text="This is Typing Effect"
+          ></div>
+          <h2 id="fadeEf">Fade</h2>
+          Fade effect-a ima 2 dopulnitelni attributa speedshowing i speedfading -
+          tonec tuka mi pishi da ti obqsnq che malko shano sum go napisal koda<br />
+          default stoinostite sa <br />
+          speedshowing="50"<br />
+          speedfading="5"
+  <br/>
+  <div class="scriptCont">
+    <p class="pinkColor">&lt;div class="txtEff"</p>
+    <p class="aquaColor">effect</p>="fade"<br />
+      <p class="aquaColor">text</p> = "This is Fade Effect" <br /><br/>
+        <p class="aquaColor">speedfading</p>="5" <br />
+          <p class="aquaColor">speedshowing</p>="50"<br />
+          <p class="pinkColor">&gt;&lt;div/&gt;</p>
+  
+          </div>
+          <div
+            class="txtEff effectCont"
+            effect="fade"
+            text="This is Fade Effect"
+            speedfading="5"
+            speedshowing="50"
+          ></div>
+          <center>
+            <button
+              class="repeatBtn"
+              onClick="funcObject.fade(filterAllObjects('fade')[0]);"
+             > Repeat</button>
+          </center>
+  <br/>
+  
+  Moje da dobavite buton za repeat /kato tozi gore/ kato mu slojite onClick = "funcObject.fade(filterAllObjects('fade')[0]);"
+  tova shte povtori samo 1viqt tekst s tozi efekt
+        ako imate pove4e ot 1 text s tozi efekt v edna stranica i iskate repeat butona da restartira efekta na vtoriq takuv tekst
+        trqbva da promenite 0-ta s 1 .. ako e tretiqt takuv tekst s 2 i tnt.. primer:
+        <div class="scriptCont">
+          <p class="pinkColor">&lt;button</p><p class="aquaColor"> 
+            onClick</p>  = "funcObject.fade(filterAllObjects('fade')[0])"
+            <span class="pinkColor">&gt;</span><br/>
+          Repeat 
+          <p class="pinkColor">&lt;/button&gt;</p>
+        </div>
+      <br/>
+          <h2 id="popUpEf">PopUp</h2>
+          - pri preminavane s mishkata v/y bukvite stavat po-goelemi moje da ima
+          dopulnitelni atributi<br />
+          "sizeUp" - kolko po-golemi da stavat buvkite pri hover // default-a e
+          sizeUp="2" t.e. goleminata na bukvite x2 <br />
+          "cursor" - kak da se promenq cursora pri hover // moje da se polzva -
+          pointer, wait, crosshair, grab i vsi4ki drugi stoinosti ot css za cursor
+          - defaulta e pointer
+          <br />
+          "move" - da se mestqt li nagore i nadolu bukvite ili samo da se
+          ogolemqvat - "up", "down" - dase mestqt nagore i nadolu.. ako ne se
+          postavi toq attribute shte si stoqt centrovani samo shte se
+          ogolemqvat<br />
+          "color" - kuv cvqt da stavat //default-a e "red" <br />
+        
+          <div class="scriptCont">
+            <span class="pinkColor">&lt;div class="txtEff" </span><br />
+            <span class="aquaColor">effect</span>="popUp"<br />
+              <span class="aquaColor">text</span> = "This is popUp Effect" <br /><br/>
+                <span class="aquaColor">sizeUp</span>="2"<br />
+                  <span class="aquaColor">color</span>="brown" <br />
+            
+                    <span class="aquaColor"> move</span>="up"<br />
+                    <span class="pinkColor"> &gt;&lt;div/&gt;</span>
+          </div>
+          <div
+            class="txtEff effectCont"
+            effect="popUp"
+            text="This is popUp Effect"
+            sizeUp="2"
+            color="brown"
+            move="up"
+          ></div>
+          <h2 id="colorEf">Color</h2>
+          I color efecta moje da ima speed i colors attributi ...
+          <br />
+          "speed" - kolko burzo da se smenq cveta na bukvite <br />
+          "colors" - mejdu koi cvetove da se smenq <br />
+          ako ne se vuvedat tezi atributi - default stoinostite sa speed = "200"
+          // prez 200ms
+          <br />
+          colors = "red, blue, green, yellow, pink, gray, orange, purple" // kato
+          trqbva da sa razdeleni sus zapetaika - moje da se polzva i "rgba()"
+          stoinosti za cvetove kakto #000000
+          <div class="scriptCont">
+           <span class="pinkColor"> &lt;div class="txtEff" </span><br />
+           <span class="aquaColor"> effect</span>="color"<br />
+            <span class="aquaColor"> text</span> = "This is Color Effect" <br /><br/>
+              <span class="aquaColor"> speed</span>="200"<br />
+                <span class="aquaColor">  color</span> ="red, blue, green, yellow, pink, gray, orange, purple"<br />
+  
+            <span class="pinkColor">&gt;&lt;div/&gt;</span>
+          </div>
+          <div
+            class="txtEff effectCont"
+            effect="color"
+            text="This is Color Effect"
+          ></div>
+          <h1 id="version">txtEff v1.2</h1>
+          ochakvahite novata versiq na txtEff skoro ....<br />
+          Moje da kontaktnite s novi idei, oplakvaniq, bugove i tnt ...
+        </div>
+        </div>
+    </div>
+    <div class="Footer" id="footer"></div>
+<script src="./txtEff.min.js"></script>
+  </body>
+</html>

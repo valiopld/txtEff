@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Blue: aqua;
+  --White: aliceblue;
+  --Black: rgb(50, 50, 50);
+  --Blacker: rgb(30, 30, 30);
+
+  --Yellow: rgb(255, 217, 0);
+  --Trans: rgba(0, 0, 0, 0.2);
+}
+
+@font-face {
+  font-family: plovdivFont;
+  src: url("./font/PlovdivDisplay-Regular.otf") format("opentype");
+}
+
+body {
+  font-family: plovdivFont;
+  background-color: var(--Blacker);
+  min-width: 450px;
+}
+
+.errorSize {
+  display: none;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
