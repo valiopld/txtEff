@@ -6,7 +6,8 @@ The only thing you need to do to use the txtEff Library is to import the script 
 
 1. Import the script directly from this GitHub repository.
 Add the following code in your HTML file (it is recommended you add it at the end of the <body>):
-<script src="http://valiopld.github.io/txtEff/txtEff.min.js"></script>
+<script src="URL"></script>
+    url: http://valiopld.github.io/txtEff/txtEff.min.js
 2. Download the script and then import it in your HTML file.
 This way the library will stay on your server and will be preserved from connection issues.
 <script src='./txtEff.min.js'></script>
