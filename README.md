@@ -6,7 +6,7 @@ The only thing you need to do to use the txtEff Library is to import the script 
 
 1. Import the script directly from this GitHub repository.
 Add the following code in your HTML file (it is recommended you add it at the end of the <body>):
-<script src='https://valiopld.github.io/txtEff/txtEff.min.js'></script>
+<script src="https://valiopld.github.io/txtEff/txtEff.min.js"></script>
 2. Download the script and then import it in your HTML file.
 This way the library will stay on your server and will be preserved from connection issues.
 <script src='./txtEff.min.js'></script>
@@ -68,11 +68,10 @@ As the functionality starts from 0 just like arrays, always use the number befor
 So your 4th text on the page will be affected by the button with “onClick = "funcObject.fade(filterAllObjects('fade')[3])".
 
 <button
-
 onClick = "funcObject.fade(filterAllObjects('fade')[0])" >
 Repeat
-
 </button>
+
 --------------------------------------------------------------------------------------------------------------------------------
 PopUp
 With the popup effect, upon hovering over a letter of the text, the same will change its size. Here, you also have a few additional attributes:
